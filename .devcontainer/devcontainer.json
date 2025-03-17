@@ -1,0 +1,22 @@
+{
+	"name": "origin",
+	"build": {
+		"dockerfile": "../Dockerfile",
+		"target": "dev",
+		"context": ".."
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance"
+			],
+			"settings": {
+				"git.path": "/usr/bin/git",
+				"python.defaultInterpreterPath": "/origin/.venv/bin/python"
+			}
+		}
+	},
+	"remoteUser": "root",
+	"postCreateCommand": "git config --global --add safe.directory /workspaces/origin"
+}
