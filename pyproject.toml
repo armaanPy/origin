@@ -29,7 +29,8 @@ dependencies = [
     "matplotlib>=3.10.1",
     "packaging>=24.2",
     "pillow>=11.1.0",
-    "pyparsing>=3.2.1"
+    "pyparsing>=3.2.1",
+    "yfinance>=0.2.55",
 ]
 
 [project.urls]
